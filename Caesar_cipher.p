@@ -1,16 +1,10 @@
-######################################################################
-# Author: Tirtha Subedi      TODO: Change this to your names
-# Username: subedit           TODO: Change this to your usernames
-#
-# Assignment: A8: Caesar Cipher
+###################################################################################
+# Author: Tirtha Subedi            
+
 #
 # Purpose: The class imports a file, encrypts the file, and exports the cipher to a new file
 #           You need to implement the decrypt function.
-######################################################################
-# Acknowledgements:
-#
-# licensed under a Creative Commons
-# Attribution-Noncommercial-Share Alike 3.0 United States License.
+####################################################################################
 ####################################################################################
 import sys
 
