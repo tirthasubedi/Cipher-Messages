@@ -81,8 +81,7 @@ class CaesarCipher:
         Converts a cipher text into an original message by shifting each letter to the left by the key
 
         :return: a string representing the original message
-        """
-        # TODO Complete the decrypt method
+        
         output = ""
         for i in self.cipher:
             if i.upper() in self.alphabet:
@@ -104,17 +103,17 @@ def main():
 
     # Caesar has some letters to send and receive.
     # Letter 1 goes to P. Lentulus Spinther, who has agreed with Caesar to use a key of 3
-    # TODO Construct a new CaesarCipher object called cipher1
-    # TODO Encrypt the file specified in the constructor
-    # TODO Write the output to a file
+    #  Construct a new CaesarCipher object called cipher1
+    #  Encrypt the file specified in the constructor
+    #  Write the output to a file
     cipher1 = CaesarCipher("letter_to_friend_1.txt", 3, "encrypt")
     cipher_text1 = cipher1.encrypt()
     cipher1.export_file(cipher_text1, "cipher_sample1.txt")
 
     # Letter 2 goes to Marcus Tullius Cicero, who has agreed to use a key of 14
-    # TODO Construct a new CaesarCipher object called cipher2
-    # TODO Encrypt the file specified in the constructor
-    # TODO Write the output to a file
+    # Construct a new CaesarCipher object called cipher2
+    # Encrypt the file specified in the constructor
+    # Write the output to a file
     cipher2 = CaesarCipher("letter_to_friend_2.txt", 14, "encrypt")
     cipher_text2 = cipher2.encrypt()
     cipher1.export_file(cipher_text2, "cipher_sample2.txt")
@@ -123,8 +122,8 @@ def main():
 
     # Letter 3 is coming from Cicero for Caesar to decrypt. Again, they agreed to use key 14
    # constructs a new CaesarCipher object called cipher3
-    # # TODO Decrypt the file specified in the constructor
-    # # TODO Write the output to a file using the export_file() method
+    # #  Decrypt the file specified in the constructor
+    # # Write the output to a file using the export_file() method
     cipher3=CaesarCipher("letter_from_friend_3.txt", 14, "decrypt")
     cipher_text3 = cipher3.decrypt()
     cipher1.export_file(cipher_text3, "cipher_sample3.txt")
